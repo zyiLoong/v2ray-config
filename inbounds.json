@@ -8,6 +8,15 @@
         "userLevel": 8
       },
       "tag": "http"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "userLevel": 8
+      },
+      "tag": "socks"
     }
   ]
 }
