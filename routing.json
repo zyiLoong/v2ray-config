@@ -4,6 +4,39 @@
     "rules": [
       {
         "type": "field",
+        "outboundTag": "Reject",
+        "domain": [
+          "geosite:category-ads-all"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Direct",
+        "domain": [
+          "geosite:private",
+          "geosite:apple-cn",
+          "geosite:google-cn",
+          "geosite:tld-cn",
+          "geosite:category-games@cn",
+          "domain:mioffice.com",
+          "geosite:win-update"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Proxy",
+        "domain": [
+          "geosite:geolocation-!cn"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Direct",
+        "domain": [
+          "geosite:cn"
+        ]
+      },{
+        "type": "field",
         "outboundTag": "Direct",
         "ip": [
           "223.5.5.5/32",
@@ -25,39 +58,6 @@
           "geoip:us",
           "geoip:ca",
           "geoip:telegram"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "Reject",
-        "domain": [
-          "geosite:category-ads-all"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "Direct",
-        "domain": [
-          "geosite:private",
-          "geosite:apple-cn",
-          "geosite:google-cn",
-          "geosite:tld-cn",
-          "geosite:category-games@cn",
-          "domain:mioffice.com"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "Proxy",
-        "domain": [
-          "geosite:geolocation-!cn"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "Direct",
-        "domain": [
-          "geosite:cn"
         ]
       },
       {
